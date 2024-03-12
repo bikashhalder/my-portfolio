@@ -9,8 +9,8 @@ import { motion } from "framer-motion";
 
 const SkeletonOne = () => {
   return (
-    <div className='p-4'>
-      <h1 className='text-6xl font-bold text-white'>Board</h1>
+    <div>
+      <h1 className='text-6xl font-bold mb-4 text-white'>Board</h1>
       <p className='text-white pb-2'>
         A collaborative, real-time whiteboard packed with features.
       </p>
@@ -70,7 +70,7 @@ const SkeletonTwo = () => {
         charts and activities, a comprehensive table for companies with CRUD and
         search, and a Kanban board with real-time synchronization.
       </p>
-      <h3 className='text-white text-lg pb-3 font-bold'>Features</h3>
+      <h3 className='text-white mb-4 text-lg pb-3 font-bold'>Features</h3>
       <div className='flex flex-wrap gap-4 '>
         <Badge color='bg-blue-500' text='Charts and Activities' />
         <Badge color='bg-blue-500' text='CURD and Search' />
@@ -78,7 +78,7 @@ const SkeletonTwo = () => {
         <Badge color='bg-blue-500' text='Realtime Synchronization' />
         <Badge color='bg-blue-500' text='Paginations' />
       </div>
-      <br />
+
       <h3 className='text-white text-lg pb-3 font-bold'>
         Languages and Packages
       </h3>
