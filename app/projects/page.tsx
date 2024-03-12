@@ -10,11 +10,11 @@ import { motion } from "framer-motion";
 const SkeletonOne = () => {
   return (
     <div>
-      <h1 className='text-6xl font-bold mb-4 text-white'>Board</h1>
-      <p className='text-white pb-2'>
+      <h1 className='text-5xl font-bold text-white'>Board</h1>
+      <p className='text-white'>
         A collaborative, real-time whiteboard packed with features.
       </p>
-      <h3 className='text-white text-lg pb-3 font-bold'>Features</h3>
+      <h3 className='text-white text-lg font-bold'>Features</h3>
       <div className='flex flex-wrap gap-4 '>
         <Badge color='bg-blue-500' text='Whiteboard' />
         <Badge
@@ -30,9 +30,7 @@ const SkeletonOne = () => {
         <Badge color='bg-blue-500' text='Auth, organisations and invites' />
       </div>
 
-      <h3 className='text-white text-lg pb-3 font-bold'>
-        Languages and Packages
-      </h3>
+      <h3 className='text-white text-lg  font-bold'>Languages and Packages</h3>
       <div className='flex flex-wrap gap-4 '>
         <Badge color='bg-green-500' text='Next.js 14' />
         <Badge color='bg-green-500' text='Tailwind' />
@@ -64,13 +62,13 @@ const SkeletonOne = () => {
 const SkeletonTwo = () => {
   return (
     <div>
-      <h1 className='text-6xl font-bold text-white'>Realtime Dashboard</h1>
+      <h1 className='text-5xl font-bold text-white'>Realtime Dashboard</h1>
       <p className='text-white pb-2'>
         An admin dashboard with full authentication, a homepage displaying
         charts and activities, a comprehensive table for companies with CRUD and
         search, and a Kanban board with real-time synchronization.
       </p>
-      <h3 className='text-white mb-4 text-lg pb-3 font-bold'>Features</h3>
+      <h3 className='text-white mb-4 text-lg font-bold'>Features</h3>
       <div className='flex flex-wrap gap-4 '>
         <Badge color='bg-blue-500' text='Charts and Activities' />
         <Badge color='bg-blue-500' text='CURD and Search' />
@@ -79,9 +77,7 @@ const SkeletonTwo = () => {
         <Badge color='bg-blue-500' text='Paginations' />
       </div>
 
-      <h3 className='text-white text-lg pb-3 font-bold'>
-        Languages and Packages
-      </h3>
+      <h3 className='text-white text-lg font-bold'>Languages and Packages</h3>
       <div className='flex flex-wrap gap-4 '>
         <Badge color='bg-green-500' text='Refine' />
         <Badge color='bg-green-500' text='AntD' />
