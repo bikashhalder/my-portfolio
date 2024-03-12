@@ -9,8 +9,8 @@ import { motion } from "framer-motion";
 
 const SkeletonOne = () => {
   return (
-    <div>
-      <h1 className='text-6xl font-bold mb-4 text-white'>Board</h1>
+    <div className='p-4'>
+      <h1 className='text-6xl font-bold text-white'>Board</h1>
       <p className='text-white pb-2'>
         A collaborative, real-time whiteboard packed with features.
       </p>
@@ -64,7 +64,7 @@ const SkeletonOne = () => {
 const SkeletonTwo = () => {
   return (
     <div>
-      <h1 className='text-6xl font-bold mb-4 text-white'>Realtime Dashboard</h1>
+      <h1 className='text-6xl font-bold text-white'>Realtime Dashboard</h1>
       <p className='text-white pb-2'>
         An admin dashboard with full authentication, a homepage displaying
         charts and activities, a comprehensive table for companies with CRUD and
