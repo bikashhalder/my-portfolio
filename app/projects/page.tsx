@@ -152,19 +152,19 @@ const cards = [
   {
     id: 1,
     content: <SkeletonOne />,
-    className: "md:col-span-2",
+    className: "md:col-span-2 col-span-12",
     thumbnail: "/board.png",
   },
   {
     id: 2,
     content: <SkeletonTwo />,
-    className: "col-span-1",
+    className: "md:col-span-1 col-span-12",
     thumbnail: "/Rdashboard.png",
   },
   {
     id: 3,
     content: <SkeletonThree />,
-    className: "col-span-4",
+    className: "md:col-span-4 col-span-12",
     thumbnail: "/Design.png",
   },
 ];
@@ -202,14 +202,14 @@ const Projects = () => {
     <main className='w-full mb-16 flex flex-col items-center justify-center'>
       <AnimatedText
         text='Imagination To Reality'
-        className='!text-6xl text-primaryDark mb-16'
+        className='md:!text-6xl text-primaryDark mb-16 !text-5xl'
       />
-      <div className='grid grid-cols-12 gap-24'>
+      <div>
         <motion.h2
           variants={heading}
           initial='initial'
           animate='animate'
-          className='col-span-12 text-4xl font-bold mb-4 uppercase text-dark/75 cursor-pointer'>
+          className='md:text-4xl text-3xl font-bold mb-4 uppercase text-dark/75 cursor-pointer'>
           Featured Project
         </motion.h2>
       </div>

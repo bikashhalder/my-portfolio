@@ -80,12 +80,12 @@ const About = () => {
       <div className='flex w-full flex-col items-center justify-center p-10'>
         <AnimatedText
           text='Where Ideas Unfold, Designs Come to Life'
-          className='!text-6xl text-primaryDark mb-16'
+          className='md:!text-6xl text-primaryDark mb-16 !text-5xl'
         />
-        <div className='grid w-full grid-cols-8 gap-16'>
+        <div className='grid w-full md:grid-cols-8 gap-16'>
           <div className='lg:col-span-4 sm:col-span-8 flex flex-col items-center justify-start'>
             <motion.h2
-              className='mb-4 text-6xl font-bold uppercase text-dark/75 cursor-pointer'
+              className='mb-4 md:text-6xl text-4xl font-bold uppercase text-dark/75 cursor-pointer'
               variants={heading}
               initial='initial'
               animate='animate'

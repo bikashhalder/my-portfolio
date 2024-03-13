@@ -18,7 +18,7 @@ const Details = ({
   work,
 }: DetailsProps) => {
   return (
-    <li className='my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-center'>
+    <li className='md:my-8 first:mt-0 last:mb-0 md:w-[60%] w-[80%] mx-auto flex flex-col items-center justify-center'>
       <div>
         <h3 className='capitalize font-bold text-2xl text-dark'>
           {position}&nbsp;
@@ -41,10 +41,10 @@ const Details = ({
 const Experience = () => {
   return (
     <div className='my-64'>
-      <h2 className='font-bold text-8xl mb-32 w-full text-center text-dark/75'>
+      <h2 className='font-bold md:text-8xl text-5xl md:mb-32 mb-5 w-full text-center text-dark/75'>
         Experience
       </h2>
-      <div className='w-[75%] mx-auto relative'>
+      <div className='md:w-[75%] mx-auto relative'>
         <ul>
           <Details
             position='Founder'

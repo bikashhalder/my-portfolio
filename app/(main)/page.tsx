@@ -10,6 +10,7 @@ import Plane from "@/components/Plane";
 import DragonFlying from "@/components/DragonFlying";
 import HomeInfo from "@/components/HomeInfo";
 import Hireme from "@/components/Hireme";
+import SocialLinks from "@/components/SocialLinks";
 
 const MainPage = () => {
   const [isRotating, setIsRotating] = useState(false);
@@ -95,6 +96,9 @@ const MainPage = () => {
           />
         </Suspense>
       </Canvas>
+      <div className='md:hidden absolute bottom-8 left-5'>
+        <SocialLinks />
+      </div>
       <div className='absolute bottom-0 right-0'>
         <Hireme />
       </div>

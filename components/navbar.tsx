@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import SocialLinks from "./SocialLinks";
 
 interface CustomLinkProps {
   href: string;
@@ -32,74 +33,19 @@ const CustomLink = ({ href, title, className = "" }: CustomLinkProps) => {
 
 const Navbar = () => {
   return (
-    <header className='w-full px-32 py-8 font-medium flex items-center justify-between relative'>
-      <nav>
-        <CustomLink href='/' title='Home' className='mr-4' />
-        <CustomLink href='/about' title='About Me' className='mx-4' />
-        <CustomLink href='/projects' title='Projects' className='ml-4' />
+    <header className='w-full px-8 md:px-32 py-8 font-medium flex items-center justify-between relative'>
+      <nav className='flex'>
+        <CustomLink href='/' title='Home' className='md:mr-4 mr-4' />
+        <CustomLink href='/about' title='About Me' className='md:mx-4 mx-2' />
+        <CustomLink
+          href='/projects'
+          title='Projects'
+          className='md:ml-4 mx-2'
+        />
       </nav>
 
-      <nav className='flex'>
-        <section className='flex justify-center items-center'>
-          <button className='group flex justify-center  rounded-md drop-shadow-xl from-gray-800 to-black  font-semibold hover:translate-y-5 hover:rounded-[50%] transition-all duration-500 '>
-            <a
-              href='https://www.linkedin.com/in/bikash-halder/'
-              target={"_blank"}
-              className='bg-white mx-2'>
-              <Image
-                src='/linkedinLogo.svg'
-                className=''
-                height={25}
-                width={25}
-                alt='linkedIn profile'
-              />
-            </a>
-
-            <span className='absolute opacity-0 group-hover:opacity-100 group-hover:text-gray-700 group-hover:text-sm group-hover:-translate-y-8 duration-700'>
-              LinkedIn
-            </span>
-          </button>
-        </section>
-
-        <section className='flex justify-center items-center'>
-          <button className='group flex justify-center  rounded-md drop-shadow-xl  from-gray-800 to-black  font-semibold hover:translate-y-5 hover:rounded-[50%] transition-all duration-500 '>
-            <a
-              href='https://github.com/bikashhalder'
-              target={"_blank"}
-              className='mx-4'>
-              <Image
-                src='/githubLogo.svg'
-                height={25}
-                width={25}
-                alt='linkedIn profile'
-              />
-            </a>
-
-            <span className='absolute opacity-0 group-hover:opacity-100 group-hover:text-gray-700 group-hover:text-sm group-hover:-translate-y-8 duration-700'>
-              Github
-            </span>
-          </button>
-        </section>
-
-        <section className='flex justify-center items-center'>
-          <button className='group flex justify-center  rounded-md drop-shadow-xl  from-gray-800 to-black  font-semibold hover:translate-y-5 hover:rounded-[50%] transition-all duration-500 '>
-            <a
-              href='https://www.instagram.com/bikash_halder_/'
-              target={"_blank"}
-              className='ml-4'>
-              <Image
-                src='/instagramLogo.svg'
-                height={25}
-                width={25}
-                alt='Instagram Profile'
-              />
-            </a>
-
-            <span className='absolute opacity-0 group-hover:opacity-100 group-hover:text-gray-700 group-hover:text-sm group-hover:-translate-y-6 duration-700'>
-              Instagram
-            </span>
-          </button>
-        </section>
+      <nav className='md:flex hidden'>
+        <SocialLinks />
       </nav>
     </header>
   );

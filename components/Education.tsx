@@ -41,7 +41,7 @@ const Details = ({
 const Education = () => {
   return (
     <div className='my-64'>
-      <h2 className='font-bold text-8xl mb-32 w-full text-center text-dark/75'>
+      <h2 className='font-bold md:text-8xl text-5xl md:mb-32 w-full text-center text-dark/75'>
         Education
       </h2>
       <div className='w-[85%] mx-auto relative'>
