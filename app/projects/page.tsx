@@ -14,7 +14,8 @@ const SkeletonOne = () => {
       <p className='text-white'>
         A collaborative, real-time whiteboard packed with features.
       </p>
-      <h3 className='text-white text-lg font-bold'>Features</h3>
+      <br />
+      <h3 className='text-white text-lg font-bold mb-2'>Features</h3>
       <div className='flex flex-wrap gap-4 '>
         <Badge color='bg-blue-500' text='Whiteboard' />
         <Badge
@@ -29,8 +30,10 @@ const SkeletonOne = () => {
         <Badge color='bg-blue-500' text='Real-time database' />
         <Badge color='bg-blue-500' text='Auth, organisations and invites' />
       </div>
-
-      <h3 className='text-white text-lg  font-bold'>Languages and Packages</h3>
+      <br />
+      <h3 className='text-white text-lg  font-bold mb-2'>
+        Languages and Packages
+      </h3>
       <div className='flex flex-wrap gap-4 '>
         <Badge color='bg-green-500' text='Next.js 14' />
         <Badge color='bg-green-500' text='Tailwind' />
