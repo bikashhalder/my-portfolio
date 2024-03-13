@@ -42,7 +42,10 @@ const Navbar = () => {
       <nav className='flex'>
         <section className='flex justify-center items-center'>
           <button className='group flex justify-center  rounded-md drop-shadow-xl from-gray-800 to-black  font-semibold hover:translate-y-5 hover:rounded-[50%] transition-all duration-500 '>
-            <a href='/' target={"_blank"} className='bg-white mx-2'>
+            <a
+              href='https://www.linkedin.com/in/bikash-halder/'
+              target={"_blank"}
+              className='bg-white mx-2'>
               <Image
                 src='/linkedinLogo.svg'
                 className=''
@@ -60,7 +63,10 @@ const Navbar = () => {
 
         <section className='flex justify-center items-center'>
           <button className='group flex justify-center  rounded-md drop-shadow-xl  from-gray-800 to-black  font-semibold hover:translate-y-5 hover:rounded-[50%] transition-all duration-500 '>
-            <a href='/' target={"_blank"} className='mx-4'>
+            <a
+              href='https://github.com/bikashhalder'
+              target={"_blank"}
+              className='mx-4'>
               <Image
                 src='/githubLogo.svg'
                 height={25}
@@ -77,7 +83,10 @@ const Navbar = () => {
 
         <section className='flex justify-center items-center'>
           <button className='group flex justify-center  rounded-md drop-shadow-xl  from-gray-800 to-black  font-semibold hover:translate-y-5 hover:rounded-[50%] transition-all duration-500 '>
-            <a href='/' target={"_blank"} className='ml-4'>
+            <a
+              href='https://www.instagram.com/bikash_halder_/'
+              target={"_blank"}
+              className='ml-4'>
               <Image
                 src='/instagramLogo.svg'
                 height={25}

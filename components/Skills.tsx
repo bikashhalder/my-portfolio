@@ -47,7 +47,7 @@ const Skills = () => {
         <Skill name='Supabase' x='-25vw' y='-10vw' />
         <Skill name='Typescript' x='-5vw' y='20vw' />
         <Skill name='Convex' x='15vw' y='-20vw' />
-        <Skill name='SCSS' x='10vw' y='-10vw' />
+        <Skill name='SASS' x='10vw' y='-10vw' />
         <Skill name='Shadcn/ui' x='14vw' y='5vw' />
         <Skill name='Framer Motion' x='-25vw' y='5vw' />
       </div>
